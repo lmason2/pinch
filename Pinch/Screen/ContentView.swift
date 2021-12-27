@@ -76,7 +76,10 @@ struct ContentView: View {
             })
             // MARK: - INFO PANEL
             .overlay(
-                InfoPanelView(scale: imageScale, offset: imageOffset),
+                InfoPanelView(scale: imageScale, offset: imageOffset)
+                    .padding(.horizontal)
+                    .padding(.top, 30)
+                ,
                 alignment: .top
             )
         } //: NAVIGATION
